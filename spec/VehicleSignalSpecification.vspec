@@ -197,3 +197,12 @@
 # OBD branch created above.
 
 #include OBD/OBD.vspec Vehicle.OBD
+
+#
+# Signals around the current status of the ride
+#
+- Vehicle.Recorder:
+  type: branch
+  description: Signals around the current status of the ride
+
+#include Recorder/Recorder.vspec Vehicle.Recorder

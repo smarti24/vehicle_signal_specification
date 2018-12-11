@@ -1,0 +1,130 @@
+#
+# (C) 2018 Volvo Cars
+# (C) 2016 Jaguar Land Rover
+# All files and artifacts in this repository are licensed under the
+# provisions of the license provided by the LICENSE file in this repository.
+#
+
+
+#
+# Signals around the current status of the ride
+#
+
+#
+# Vehicle signals
+#
+- IgnitionOnTime:
+  datatype: uint32
+  type: sensor
+  unit: s
+  description: Accumulated ignition on time in seconds.
+
+- IgnitionOffTime:
+  datatype: uint32
+  type: sensor
+  unit: s
+  description: Accumulated ignition off time in seconds.
+
+- DriveTime:
+  datatype: uint32
+  type: sensor
+  unit: s
+  description: Accumulated drive time in seconds.
+
+- IdleTime:
+  datatype: uint32
+  type: sensor
+  unit: s
+  description: Accumulated idle time in seconds.
+
+- Speed:
+  datatype: int32
+  type: sensor
+  min: -250
+  max: 250
+  unit: km/h
+  description: Vehicle speed, as sensed by the gearbox.
+
+- TravelledDistance:
+  datatype: float
+  type: sensor
+  unit: km
+  description: Odometer reading
+
+- TripMeterReading:
+  datatype: float
+  type: sensor
+  unit: km
+  description: Current trip meter reading
+
+- AmbientAirTemperature:
+  datatype: float
+  type: sensor
+  unit: celsius
+  description: Ambient air temperature
+
+
+- IsMoving:
+  datatype: boolean
+  type: sensor
+  description: Indicates whether the vehicle is stationary or moving
+
+- AverageSpeed:
+  datatype: int32
+  type: sensor
+  min: -250
+  max: 250
+  unit: km/h
+  description: Average speed for the current trip
+
+
+#
+# Spatial Acceleration
+#
+- Acceleration:
+  type: branch
+  description: Spatial acceleration
+
+- Acceleration.Longitudinal:
+  datatype: int32
+  type: sensor
+  unit: m/s2
+  description: Vehicle acceleration in X (longitudinal acceleration).
+
+- Acceleration.Lateral:
+  datatype: int32
+  type: sensor
+  unit: m/s2
+  description: Vehicle acceleration in Y (lateral acceleration).
+
+- Acceleration.Vertical:
+  datatype: int32
+  type: sensor
+  unit: m/s2
+  description: Vehicle acceleration in Z (vertical acceleration).
+
+
+#
+# Spatial Rotation
+#
+- AngularVelocity:
+  type: branch
+  description: Spatial rotation
+
+- AngularVelocity.Roll:
+  datatype: int16
+  type: sensor
+  unit: degrees/s
+  description: Vehicle rotation rate along X (longitudinal).
+
+- AngularVelocity.Pitch:
+  datatype: int16
+  type: sensor
+  unit: degrees/s
+  description: Vehicle rotation rate along Y (lateral).
+
+- AngularVelocity.Yaw:
+  datatype: int16
+  type: sensor
+  unit: degrees/s
+  description: Vehicle rotation rate along Z (vertical).

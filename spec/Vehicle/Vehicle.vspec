@@ -114,142 +114,24 @@
   type: attribute
   description: A textual description of known damages, both repaired and unrepaired.
 
-#
-# Vehicle signals
-#
-- IgnitionOnTime:
-  datatype: uint32
-  type: sensor
-  unit: s
-  description: Accumulated ignition on time in seconds.
-
-- IgnitionOffTime:
-  datatype: uint32
-  type: sensor
-  unit: s
-  description: Accumulated ignition off time in seconds.
-
-- DriveTime:
-  datatype: uint32
-  type: sensor
-  unit: s
-  description: Accumulated drive time in seconds.
-
-- IdleTime:
-  datatype: uint32
-  type: sensor
-  unit: s
-  description: Accumulated idle time in seconds.
-
-- Speed:
-  datatype: int32
-  type: sensor
-  min: -250
-  max: 250
-  unit: km/h
-  description: Vehicle speed, as sensed by the gearbox.
-
-- TravelledDistance:
-  datatype: float
-  type: sensor
-  unit: km
-  description: Odometer reading
-
-- TripMeterReading:
-  datatype: float
-  type: sensor
-  unit: km
-  description: Current trip meter reading
-
-- AmbientAirTemperature:
-  datatype: float
-  type: sensor
-  unit: celsius
-  description: Ambient air temperature
-
-
-- IsMoving:
-  datatype: boolean
-  type: sensor
-  description: Indicates whether the vehicle is stationary or moving
-
-- AverageSpeed:
-  datatype: int32
-  type: sensor
-  min: -250
-  max: 250
-  unit: km/h
-  description: Average speed for the current trip
-
-
-#
-# Spatial Acceleration
-#
-- Acceleration:
-  type: branch
-  description: Spatial acceleration
-
-- Acceleration.Longitudinal:
-  datatype: int32
-  type: sensor
-  unit: m/s2
-  description: Vehicle acceleration in X (longitudinal acceleration).
-
-- Acceleration.Lateral:
-  datatype: int32
-  type: sensor
-  unit: m/s2
-  description: Vehicle acceleration in Y (lateral acceleration).
-
-- Acceleration.Vertical:
-  datatype: int32
-  type: sensor
-  unit: m/s2
-  description: Vehicle acceleration in Z (vertical acceleration).
-
-
-#
-# Spatial Rotation
-#
-- AngularVelocity:
-  type: branch
-  description: Spatial rotation
-
-- AngularVelocity.Roll:
-  datatype: int16
-  type: sensor
-  unit: degrees/s
-  description: Vehicle rotation rate along X (longitudinal).
-
-- AngularVelocity.Pitch:
-  datatype: int16
-  type: sensor
-  unit: degrees/s
-  description: Vehicle rotation rate along Y (lateral).
-
-- AngularVelocity.Yaw:
-  datatype: int16
-  type: sensor
-  unit: degrees/s
-  description: Vehicle rotation rate along Z (vertical).
 
 #
 # Schema from schema.org
 #
 
-- RoofLoad:
+- VehicleIdentification.RoofLoad:
   datatype: int16
   type: attribute
   unit: kg
   description: The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.
 
-- accelerationTime:
+- VehicleIdentification.accelerationTime:
   datatype: int16
   type: attribute
   unit: sec
   description: The time needed to accelerate the vehicle from a given start velocity to a given target velocity.
 
-- cargoVolume:
+- VehicleIdentification.cargoVolume:
   datatype: int16
   type: attribute
   unit: litres
@@ -257,7 +139,7 @@
   min: 0
   max: 100
 
-- emissionsCO2:
+- VehicleIdentification.emissionsCO2:
   datatype: int16
   type: attribute
   description: The CO2 emissions in g/km.
