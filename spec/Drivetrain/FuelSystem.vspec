@@ -20,7 +20,7 @@
 - HybridType:
   datatype: string
   type: attribute
-  enum: [ "unknown", "not_applicable", "stop_start", "belt_ISG", "CIMG", "PHEV" ]
+  enum: [ "unknown", "notApplicable", "stopStart", "beltISG", "CIMG", "PHEV" ]
   default: "unknown"
   description: Defines the hybrid type of the vehicle
 

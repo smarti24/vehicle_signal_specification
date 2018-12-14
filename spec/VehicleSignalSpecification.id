@@ -3438,6 +3438,14 @@ Vehicle.Body.Raindetection.intensity: 3470
 Vehicle.Body.RefuelPosition: 3465
 Vehicle.Body.Trunk.IsLocked: 3468
 Vehicle.Body.Trunk.IsOpen: 3467
+Vehicle.Body.WindShield.Front.Heating.Status: 4525
+Vehicle.Body.WindShield.Front.WasherFluid.Level: 4527
+Vehicle.Body.WindShield.Front.WasherFluid.LevelLow: 4526
+Vehicle.Body.WindShield.Front.Wiping.Status: 4524
+Vehicle.Body.WindShield.Rear.Heating.Status: 4529
+Vehicle.Body.WindShield.Rear.WasherFluid.Level: 4531
+Vehicle.Body.WindShield.Rear.WasherFluid.LevelLow: 4530
+Vehicle.Body.WindShield.Rear.Wiping.Status: 4528
 Vehicle.Body.Windshield.Front.Heating.Status: 3472
 Vehicle.Body.Windshield.Front.WasherFluid.Level: 3474
 Vehicle.Body.Windshield.Front.WasherFluid.LevelLow: 3473

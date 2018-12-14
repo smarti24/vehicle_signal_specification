@@ -59,7 +59,7 @@
 - Sunroof.Switch:
   datatype: string
   type: actuator
-  enum: [ "Inactive", "Close", "Open", "OneShotClose", "OneShotOpen", "TiltUp", "TiltDown" ]
+  enum: [ "inactive", "close", "open", "oneShotClose", "oneShotOpen", "tiltUp", "tiltDown" ]
   description: Switch controlling sliding action such as window, sunroof, or shade.
 
 - Sunroof.Shade:
@@ -422,5 +422,5 @@
   datatype: string
   type: attribute
   value: front_left
-  enum: ["front_left", "front_right"]
+  enum: ["frontLeft", "frontRight"]
   description: Position of the steering wheel inside the cabin

@@ -47,9 +47,9 @@
                 "datatype": "string", 
                 "enum": [
                   "unknown", 
-                  "not_applicable", 
-                  "stop_start", 
-                  "belt_ISG", 
+                  "notApplicable", 
+                  "stopStart", 
+                  "beltISG", 
                   "CIMG", 
                   "PHEV"
                 ], 
@@ -201,9 +201,9 @@
                 "datatype": "string", 
                 "enum": [
                   "unknown", 
-                  "forward wheel drive", 
-                  "rear wheel drive", 
-                  "all wheel drive"
+                  "forwardWheelDrive", 
+                  "rearWheelDrive", 
+                  "allWheelDrive"
                 ], 
                 "value": "unknown", 
                 "type": "attribute", 
@@ -610,11 +610,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3591
                           }
@@ -644,11 +644,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3589
                           }, 
@@ -702,11 +702,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3582
                           }
@@ -736,11 +736,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3580
                           }, 
@@ -799,11 +799,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3609
                           }
@@ -833,11 +833,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3607
                           }, 
@@ -890,11 +890,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3600
                           }
@@ -924,11 +924,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3598
                           }, 
@@ -990,11 +990,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3627
                           }
@@ -1024,11 +1024,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3625
                           }, 
@@ -1082,11 +1082,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3618
                           }
@@ -1116,11 +1116,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3616
                           }, 
@@ -1180,11 +1180,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3645
                           }
@@ -1214,11 +1214,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3643
                           }, 
@@ -1271,11 +1271,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3636
                           }
@@ -1305,11 +1305,11 @@
                             "datatype": "string", 
                             "type": "actuator", 
                             "enum": [
-                              "Inactive", 
-                              "Close", 
-                              "Open", 
-                              "OneShotClose", 
-                              "OneShotOpen"
+                              "inactive", 
+                              "close", 
+                              "open", 
+                              "oneShotClose", 
+                              "oneShotOpen"
                             ], 
                             "id": 3634
                           }, 
@@ -1689,12 +1689,12 @@
                     "type": "actuator", 
                     "enum": [
                       "unknown", 
-                      "Stop", 
-                      "Play", 
-                      "FastForward", 
-                      "FastBackward", 
-                      "SkipForward", 
-                      "SkipBackward"
+                      "stop", 
+                      "play", 
+                      "fastForward", 
+                      "fastBackward", 
+                      "skipForward", 
+                      "skipBackward"
                     ], 
                     "id": 3527
                   }, 
@@ -1734,7 +1734,7 @@
                         "type": "actuator", 
                         "enum": [
                           "unknown", 
-                          "SiriusXM", 
+                          "siriusXM", 
                           "AM", 
                           "FM", 
                           "DAB", 
@@ -1743,11 +1743,11 @@
                           "DVD", 
                           "AUX", 
                           "USB", 
-                          "Disk", 
-                          "Bluetooth", 
-                          "Internet", 
-                          "Voice", 
-                          "Beep"
+                          "disk", 
+                          "bluetooth", 
+                          "internet", 
+                          "voice", 
+                          "beep"
                         ], 
                         "id": 3528
                       }, 
@@ -1870,8 +1870,8 @@
                     "datatype": "string", 
                     "type": "actuator", 
                     "enum": [
-                      "mpg_UK", 
-                      "mpg_US", 
+                      "mpgUK", 
+                      "mpgUS", 
                       "mpl", 
                       "km/l", 
                       "l/100km"
@@ -1947,8 +1947,8 @@
                     "datatype": "string", 
                     "type": "actuator", 
                     "enum": [
-                      "Day", 
-                      "Night"
+                      "day", 
+                      "night"
                     ], 
                     "id": 3551
                   }
@@ -1974,13 +1974,13 @@
                 "datatype": "string", 
                 "type": "actuator", 
                 "enum": [
-                  "Inactive", 
-                  "Close", 
-                  "Open", 
-                  "OneShotClose", 
-                  "OneShotOpen", 
-                  "TiltUp", 
-                  "TiltDown"
+                  "inactive", 
+                  "close", 
+                  "open", 
+                  "oneShotClose", 
+                  "oneShotOpen", 
+                  "tiltUp", 
+                  "tiltDown"
                 ], 
                 "id": 3553
               }, 
@@ -2002,11 +2002,11 @@
                     "datatype": "string", 
                     "type": "actuator", 
                     "enum": [
-                      "Inactive", 
-                      "Close", 
-                      "Open", 
-                      "OneShotClose", 
-                      "OneShotOpen"
+                      "inactive", 
+                      "close", 
+                      "open", 
+                      "oneShotClose", 
+                      "oneShotOpen"
                     ], 
                     "id": 3554
                   }
@@ -8598,8 +8598,8 @@
               "Position": {
                 "datatype": "string", 
                 "enum": [
-                  "front_left", 
-                  "front_right"
+                  "frontLeft", 
+                  "frontRight"
                 ], 
                 "value": "front_left", 
                 "type": "attribute", 
@@ -8627,11 +8627,11 @@
                 "datatype": "string", 
                 "type": "actuator", 
                 "enum": [
-                  "Inactive", 
-                  "Close", 
-                  "Open", 
-                  "OneShotClose", 
-                  "OneShotOpen"
+                  "inactive", 
+                  "close", 
+                  "open", 
+                  "oneShotClose", 
+                  "oneShotOpen"
                 ], 
                 "id": 3496
               }
@@ -8751,12 +8751,12 @@
             "datatype": "string", 
             "type": "attribute", 
             "enum": [
-              "front_left", 
-              "front_right", 
-              "middle_left", 
-              "middle_right", 
-              "rear_left", 
-              "rear_right"
+              "frontLeft", 
+              "frontRight", 
+              "middleLeft", 
+              "middleRight", 
+              "rearLeft", 
+              "rearRight"
             ], 
             "id": 3465
           }, 
@@ -8883,11 +8883,10 @@
                 "type": "branch", 
                 "children": {
                   "Wiping": {
-                    "description": "Front windshield wiper signals", 
+                    "description": "Windshield wiper signals", 
                     "type": "branch", 
                     "children": {
                       "Status": {
-                        "description": "Front wiper status", 
                         "datatype": "string", 
                         "type": "actuator", 
                         "enum": [
@@ -8896,33 +8895,33 @@
                           "medium", 
                           "fast", 
                           "interval", 
-                          "rainsensor"
+                          "rainSensor"
                         ], 
-                        "id": 3471
+                        "id": 3471, 
+                        "description": "Wiper status"
                       }
                     }
                   }, 
                   "Heating": {
-                    "description": "Front windshield heater signals", 
                     "type": "branch", 
                     "children": {
                       "Status": {
-                        "description": "Front windshield heater status. 0 - off, 1 - on", 
+                        "description": "Windshield heater status. 0 - off, 1 - on", 
                         "datatype": "boolean", 
                         "type": "actuator", 
                         "id": 3472
                       }
-                    }
+                    }, 
+                    "description": "Windshield heater signals"
                   }, 
                   "WasherFluid": {
-                    "description": "Front windshield washer fluid signals", 
                     "type": "branch", 
                     "children": {
                       "LevelLow": {
+                        "description": "Low level indication for washer fluid. True = Level Low. False = Level OK.", 
                         "datatype": "boolean", 
                         "type": "sensor", 
-                        "id": 3473, 
-                        "description": "Low level indication for washer fluid. True = Level Low. False = Level OK."
+                        "id": 3473
                       }, 
                       "Level": {
                         "datatype": "uint8", 
@@ -8931,7 +8930,8 @@
                         "unit": "percent", 
                         "description": "Washer fluid level as a percent. 0 = Empty. 100 = Full."
                       }
-                    }
+                    }, 
+                    "description": "Windshield washer fluid signals"
                   }
                 }
               }, 
@@ -8940,11 +8940,10 @@
                 "type": "branch", 
                 "children": {
                   "Wiping": {
-                    "description": "Rear windshield wiper signals", 
+                    "description": "Windshield wiper signals", 
                     "type": "branch", 
                     "children": {
                       "Status": {
-                        "description": "Rear wiper status", 
                         "datatype": "string", 
                         "type": "actuator", 
                         "enum": [
@@ -8953,26 +8952,26 @@
                           "medium", 
                           "fast", 
                           "interval", 
-                          "rainsensor"
+                          "rainSensor"
                         ], 
-                        "id": 3475
+                        "id": 3475, 
+                        "description": "Wiper status"
                       }
                     }
                   }, 
                   "Heating": {
-                    "description": "Rear windshield heater signals", 
                     "type": "branch", 
                     "children": {
                       "Status": {
-                        "description": "Rear windshield heater status. 0 - off, 1 - on", 
+                        "description": "Windshield heater status. 0 - off, 1 - on", 
                         "datatype": "boolean", 
                         "type": "actuator", 
                         "id": 3476
                       }
-                    }
+                    }, 
+                    "description": "Windshield heater signals"
                   }, 
                   "WasherFluid": {
-                    "description": "Rear windshield washer fluid signals", 
                     "type": "branch", 
                     "children": {
                       "LevelLow": {
@@ -8982,13 +8981,14 @@
                         "id": 3477
                       }, 
                       "Level": {
-                        "description": "Washer fluid level as a percent. 0 = Empty. 100 = Full.", 
                         "datatype": "uint8", 
                         "type": "sensor", 
                         "id": 3478, 
-                        "unit": "percent"
+                        "unit": "percent", 
+                        "description": "Washer fluid level as a percent. 0 = Empty. 100 = Full."
                       }
-                    }
+                    }, 
+                    "description": "Windshield washer fluid signals"
                   }
                 }
               }

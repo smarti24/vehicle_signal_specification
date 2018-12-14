@@ -4,7 +4,7 @@
 // Mozilla Public License, version 2.0.  The full text of the
 // Mozilla Public License is at https://www.mozilla.org/MPL/2.0/
 
-const UTF8String VSS_VERSION = "2.0.0-alpha+004"
+const UTF8String VSS_VERSION = "2.0.0-alpha+005"
 
 struct SignalSpec {
     UInt32 id
@@ -46,7 +46,7 @@ const SignalSpec[] signal_spec = [
     description: "Defines the hybrid type of the vehicle"
     datatype: string
     id: 3454
-    enum: ['unknown', 'not_applicable', 'stop_start', 'belt_ISG', 'CIMG', 'PHEV']
+    enum: ['unknown', 'notApplicable', 'stopStart', 'beltISG', 'CIMG', 'PHEV']
 }
 ,
 {
@@ -202,7 +202,7 @@ const SignalSpec[] signal_spec = [
     description: "Drive type."
     datatype: string
     id: 3441
-    enum: ['unknown', 'forward wheel drive', 'rear wheel drive', 'all wheel drive']
+    enum: ['unknown', 'forwardWheelDrive', 'rearWheelDrive', 'allWheelDrive']
 }
 ,
 {
@@ -479,7 +479,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3591
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -507,7 +507,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3589
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -559,7 +559,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3582
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -587,7 +587,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3580
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -639,7 +639,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3609
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -667,7 +667,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3607
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -719,7 +719,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3600
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -747,7 +747,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3598
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -799,7 +799,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3627
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -827,7 +827,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3625
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -879,7 +879,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3618
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -907,7 +907,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3616
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -959,7 +959,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3645
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -987,7 +987,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3643
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -1039,7 +1039,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3636
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -1067,7 +1067,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3634
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -1381,7 +1381,7 @@ const SignalSpec[] signal_spec = [
     description: "Tells if the media was"
     datatype: string
     id: 3527
-    enum: ['unknown', 'Stop', 'Play', 'FastForward', 'FastBackward', 'SkipForward', 'SkipBackward']
+    enum: ['unknown', 'stop', 'play', 'fastForward', 'fastBackward', 'skipForward', 'skipBackward']
 }
 ,
 {
@@ -1424,7 +1424,7 @@ const SignalSpec[] signal_spec = [
     description: "Media selected for playback"
     datatype: string
     id: 3528
-    enum: ['unknown', 'SiriusXM', 'AM', 'FM', 'DAB', 'TV', 'CD', 'DVD', 'AUX', 'USB', 'Disk', 'Bluetooth', 'Internet', 'Voice', 'Beep']
+    enum: ['unknown', 'siriusXM', 'AM', 'FM', 'DAB', 'TV', 'CD', 'DVD', 'AUX', 'USB', 'disk', 'bluetooth', 'internet', 'voice', 'beep']
 }
 ,
 {
@@ -1541,7 +1541,7 @@ const SignalSpec[] signal_spec = [
     description: "Fuel economy unit used in the current HMI"
     datatype: string
     id: 3548
-    enum: ['mpg_UK', 'mpg_US', 'mpl', 'km/l', 'l/100km']
+    enum: ['mpgUK', 'mpgUS', 'mpl', 'km/l', 'l/100km']
 }
 ,
 {
@@ -1603,7 +1603,7 @@ const SignalSpec[] signal_spec = [
     description: "Current display theme"
     datatype: string
     id: 3551
-    enum: ['Day', 'Night']
+    enum: ['day', 'night']
 }
 ,
 {
@@ -1622,7 +1622,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or shade."
     datatype: string
     id: 3553
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen', 'TiltUp', 'TiltDown']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen', 'tiltUp', 'tiltDown']
 }
 ,
 {
@@ -1642,7 +1642,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3554
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -7998,7 +7998,7 @@ const SignalSpec[] signal_spec = [
     description: "Position of the steering wheel inside the cabin"
     datatype: string
     id: 4355
-    enum: ['front_left', 'front_right']
+    enum: ['frontLeft', 'frontRight']
 }
 ,
 {
@@ -8018,7 +8018,7 @@ const SignalSpec[] signal_spec = [
     description: "Switch controlling sliding action such as window, sunroof, or blind."
     datatype: string
     id: 3496
-    enum: ['Inactive', 'Close', 'Open', 'OneShotClose', 'OneShotOpen']
+    enum: ['inactive', 'close', 'open', 'oneShotClose', 'oneShotOpen']
 }
 ,
 {
@@ -8105,7 +8105,7 @@ const SignalSpec[] signal_spec = [
     description: "Location of the fuel cap or charge port"
     datatype: string
     id: 3465
-    enum: ['front_left', 'front_right', 'middle_left', 'middle_right', 'rear_left', 'rear_right']
+    enum: ['frontLeft', 'frontRight', 'middleLeft', 'middleRight', 'rearLeft', 'rearRight']
 }
 ,
 {
@@ -8231,16 +8231,16 @@ const SignalSpec[] signal_spec = [
 {
     name: "Vehicle.Body.Windshield.Front.Wiping.Status"
     type: "actuator"
-    description: "Front wiper status"
+    description: "Wiper status"
     datatype: string
     id: 3471
-    enum: ['off', 'slow', 'medium', 'fast', 'interval', 'rainsensor']
+    enum: ['off', 'slow', 'medium', 'fast', 'interval', 'rainSensor']
 }
 ,
 {
     name: "Vehicle.Body.Windshield.Front.Heating.Status"
     type: "actuator"
-    description: "Front windshield heater status. 0 - off, 1 - on"
+    description: "Windshield heater status. 0 - off, 1 - on"
     datatype: boolean
     id: 3472
 }
@@ -8265,16 +8265,16 @@ const SignalSpec[] signal_spec = [
 {
     name: "Vehicle.Body.Windshield.Rear.Wiping.Status"
     type: "actuator"
-    description: "Rear wiper status"
+    description: "Wiper status"
     datatype: string
     id: 3475
-    enum: ['off', 'slow', 'medium', 'fast', 'interval', 'rainsensor']
+    enum: ['off', 'slow', 'medium', 'fast', 'interval', 'rainSensor']
 }
 ,
 {
     name: "Vehicle.Body.Windshield.Rear.Heating.Status"
     type: "actuator"
-    description: "Rear windshield heater status. 0 - off, 1 - on"
+    description: "Windshield heater status. 0 - off, 1 - on"
     datatype: boolean
     id: 3476
 }

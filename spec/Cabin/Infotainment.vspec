@@ -16,7 +16,7 @@
 - Media.Action:
   datatype: string
   type: actuator
-  enum: [ "unknown", "Stop", "Play", "FastForward", "FastBackward", "SkipForward",  "SkipBackward" ]
+  enum: [ "unknown", "stop", "play", "fastForward", "fastBackward", "skipForward",  "skipBackward" ]
   description: Tells if the media was
 
 - Media.Played:
@@ -27,7 +27,7 @@
 - Media.Played.Source:
   datatype: string
   type: actuator
-  enum: [ "unknown", "SiriusXM", "AM", "FM", "DAB", "TV",  "CD", "DVD", "AUX", "USB", "Disk", "Bluetooth", "Internet", "Voice", "Beep" ]
+  enum: [ "unknown", "siriusXM", "AM", "FM", "DAB", "TV",  "CD", "DVD", "AUX", "USB", "disk", "bluetooth", "internet", "voice", "beep" ]
   description: Media selected for playback
 
 - Media.Played.Artist:
@@ -172,7 +172,7 @@
 - HMI.FuelEconomyUnits:
   datatype: string
   type: actuator
-  enum: [ "mpg_UK", "mpg_US", "mpl", "km/l", "l/100km" ]
+  enum: [ "mpgUK", "mpgUS", "mpl", "km/l", "l/100km" ]
   description: Fuel economy unit used in the current HMI
 
 - HMI.EVEconomyUnits:
@@ -190,5 +190,5 @@
 - HMI.DayNightMode:
   datatype: string
   type: actuator
-  enum: [ "Day", "Night" ]
+  enum: [ "day", "night" ]
   description: Current display theme

@@ -1,0 +1,35 @@
+# Spec file for windshield information
+
+- Wiping:
+  type: branch
+  description: Windshield wiper signals
+
+- Wiping.Status:
+  datatype: string
+  type: actuator
+  enum: ["off", "slow", "medium", "fast", "interval", "rainSensor"]
+  description: Wiper status
+
+- Heating:
+  type: branch
+  description: Windshield heater signals
+
+- Heating.Status:
+  datatype: boolean
+  type: actuator
+  description: Windshield heater status. 0 - off, 1 - on
+
+- WasherFluid:
+  type: branch
+  description: Windshield washer fluid signals
+
+- WasherFluid.LevelLow:
+  datatype: boolean
+  type: sensor
+  description: Low level indication for washer fluid. True = Level Low. False = Level OK.
+
+- WasherFluid.Level:
+  datatype: uint8
+  unit: percent
+  type: sensor
+  description: Washer fluid level as a percent. 0 = Empty. 100 = Full.
