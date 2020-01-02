@@ -10,6 +10,20 @@
 # A single HVAC station in the vehicle.
 #
 
+- AutoMode:
+  datatype: string
+  enum: ["auto", "partial", "manual"]
+  description: >
+    Determines whether auto climate mode is enabled to get temperature of the station
+    to within the desired temperature set point (TargetTemperature).  The station
+    is either set for automatic operation ("auto") or manual control ("manual").
+    It can also be set for "partial" if the system is in automatic operation but
+    one or more settings (such as fan speed) are being overridden.  Some settings
+    may not be considered part of the "auto" climate setting and are configured
+    elsewhere (such as heated seats) but this is not defined in this specification.
+    If station cannot set an individual auto mode then this value shall be the
+    same as the applicable "global" setting (entire cabin, entire row, etc.).
+
 - FanSpeed:
   datatype: uint8
   type: sensor
