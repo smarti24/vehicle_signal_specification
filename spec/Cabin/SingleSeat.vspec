@@ -21,12 +21,40 @@
   description: Is the belt engaged.
 
 - Heating:
-  datatype: int8
-  type: sensor
-  min: -100
-  max: 100
-  unit: percent
-  description: Seat cooling / heating. 0 = off. -100 = max cold. +100 = max heat
+  datatype: uint8
+  description: Current setting for heated seat, from 0=off to HeatingMax.
+
+- HeatingMax:
+  datatype: uint8
+  description: >
+    Maximum heating value for the seat, which can either be an incremental value
+    (such as 3) or represent an arbitrary percentage (100).  There is no implied
+    guarantee of energy linearity between "steps", unless the vehicle
+    specifications indicate otherwise.
+
+- Ventilation:
+  datatype: uint8
+  description: >
+    Indicates fan speed of ventilated speed, if applicable.  Note that this
+    setting is different than the "Cooling" setting, and it is possible on
+    some vehicles to enable both Heated or Cooling on seats simultaneously as  Ventilation to augment the effect of heating/cooling.
+
+- VentilationMax:
+  datatype: uint8
+  description: >
+    Indicates the maximum setting for ventilation,  which can either be an incremental value (such as 3) or represent an arbitrary percentage (100).  There is no implied guarantee of linearity between "steps" and the fan speed
+    or fan power, unless the vehicle specifications indicate otherwise.4
+
+- Cooling:
+  datatype: uint8
+  description: Current setting for cooled seat, from 0=off to CoolingMax.
+
+- CoolingMax:
+  description: >
+    Maximum cooling value for the seat, which can either be an incremental value
+    (such as 3) or represent an arbitrary percentage (100).  There is no implied
+    guarantee of energy linearity between "steps", unless the vehicle
+    specifications indicate otherwise.
 
 - Massage:
   datatype: uint8

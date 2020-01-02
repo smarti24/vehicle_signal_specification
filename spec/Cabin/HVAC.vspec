@@ -70,28 +70,73 @@
 #include SingleHVACStation.vspec Row4.Left
 #include SingleHVACStation.vspec Row4.Right
 
-- IsRecirculationActive:
-  datatype: boolean
-  type: actuator
-  description: Is recirculation active.
+- RecirculationMode:
+  datatype: string
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >
+    Determines if air recirculation is on or off ("*_on"/"*_off") and whether
+    or not it was triggered on by Auto climate settings or manually triggered
+    on/off ("auto_*"/"manual_*").
 
-- IsFrontDefrosterActive:
-  datatype: boolean
-  type: actuator
-  description: Is front defroster active.
+- FrontDefrosterMode:
+  datatype: string
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >
+    Determines if front defroster is on or off ("*_on"/"*_off") and whether
+    or not it was triggered on by Auto climate settings or manually triggered
+    on/off ("auto_*"/"manual_*").
 
-- IsRearDefrosterActive:
-  datatype: boolean
-  type: actuator
-  description: Is rear defroster active.
+- RearDefrosterMode:
+  datatype: string
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >
+    Determines if rear defroster is on or off ("*_on"/"*_off") and whether
+    or not it was triggered on by Auto climate settings or manually triggered
+    on/off ("auto_*"/"manual_*").
 
-- IsAirConditioningActive:
+- MirrorDefrosterMode:
+  datatype: string
+  enum: ["not_avail", "unknown", "auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >
+    Determines if side view mirror defroster is on or off ("*_on"/"*_off") and
+    whether or not it was triggered on by Auto climate settings or manually
+    triggered on/off ("auto_*"/"manual_*").  Note that this feature, if equipped,
+    may be activated simultaneously RearDefrosterMode is activated, in which case
+    this signal may be the same as RearDefrosterMode, or "unknown" if the system
+    has no way to determine if this feature is active or not.  If known to be
+    unavailable, this may be "not_avail".
+
+- AirConditioningMode:
+  datatype: string
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >
+    Determines if air conditioning is on or off ("*_on"/"*_off") and whether
+    or not it was triggered on by Auto climate settings or manually triggered
+    on/off ("auto_*"/"manual_*").
+
+- HeatedSteeringWheelMode:
+  datatype: string
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  type: sensor
+  description: >- Cabin
+    Determines if heated steering wheel is on or off ("*_on"/"*_off") and whether
+    or not it was triggered on by Auto climate settings or manually triggered
+    on/off ("auto_*"/"manual_*").
+
+- IsMaxACOn
   datatype: boolean
-  type: actuator
-  description: Is Air conditioning active.
+  type: sensor
+  description: >
+    Indicates that "MAX AC" is on, which may, for example, turn
+    fans and AC to maximum possible settings.
 
 - AmbientAirTemperature:
   datatype: float
   type: sensor
-  unit: celsius
-  description: Ambient air temperature
+  unit: celsius- Cabin
+  description: Ambient air temperature outside of vehicle

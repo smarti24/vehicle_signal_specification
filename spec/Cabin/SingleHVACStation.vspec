@@ -12,22 +12,79 @@
 
 - FanSpeed:
   datatype: uint8
-  type: actuator
-  min: 0
-  max: 100
-  unit: percent
-  description: Fan Speed, 0 = off. 100 = max
+  type: sensor
+  description: >
+    Fan speed from 0 (off) to FanSpeedMax.  If station cannot set an individual
+    fan speed this value shall be the same as the applicable "global" setting
+    (entire cabin, entire row, etc.).
 
-- Temperature:
-  datatype: int8
-  type: actuator
-  min: -50
-  max: 50
+- FanSpeedMax:
+  datatype: uint8
+  type: sensor
+  description: >
+    Maximum possible fan speed.  This may be an arbitrary value such as number
+    of settings the fan has (such as 4) or represented as a percentage (100).
+    Linearity of the fan speed to actual output (such as RPM or power) is not
+    guaranteed, although may be provided by the vehicle.
+
+- TargetTemperature:
+  datatype: float
+  type: sensor
   unit: celsius
-  description: Temperature
+  description: >
+    Target temperature for automatic temperature mode.  If station
+    cannot set an individual temperature then this value shall be the same as
+    the "global" setting (entire cabin, entire row, etc.).  Special values of 0.0
+    and 10000.0 can be used to describe "MIN" and "MAX" temperatures, respectively
 
-- AirDistribution:
+- FootWellVent:
   datatype: string
-  type: actuator
-  enum: [ "up", "middle", "down" ]
-  description: Direction of airstream
+  type: sensor
+  enum: ["manual_open", "manual_closed", "auto_open", "auto_closed"]
+  description: >
+    Indicates if the foot-well vent is open ("*_open") or closed ("*_closed") and
+    whether or not this is due to the system being in "auto" climate mode
+    ("auto_*"), or if the occupant has overridden the default automatic setting or
+    the system is in manual control mode ("manual_*").  If this setting is not
+    individually selectable, this value shall be the same as the applicable
+    "global" setting (entire cabin, entire row, etc.).
+
+- FaceVent:
+  datatype: string
+  type: sensor
+  enum:  ["manual_open", "manual_closed", "auto_open", "auto_closed"]
+  description: >
+    Indicates if the face vent is open ("*_open") or closed ("*_closed") and
+    whether or not this is due to the system being in "auto" climate mode
+    ("auto_*"), or if the occupant has overridden the default automatic setting or
+    the system is in manual control mode ("manual_*").  If this setting is not
+    individually selectable, this value shall be the same as the applicable
+    "global" setting (entire cabin, entire row, etc.).
+
+- Sync:
+  datatype: string
+  type: sensor
+  enum: ["none", "row", "all", "rear", "off"]
+  description: >
+    This indicates if the set climate settings are synchronized.  It may be set
+    to "none" which indicates that the climate settings are customized to the
+    station, "row" if the climate in synchronized to a row only, "all" if the
+    climate throughout the cabin is synchronized, "rear" if only rear rows are
+    synced, or "off" if the station is turned off by another control (such as
+    from the front row).  While this signal can indicate what mode Sync is in,
+    it can also indicate restrictions if the station cannot be set independently.
+    For example, imagine a vehicle with only front row and second row.  The
+    driver and passenger in the front have separate controls, but the rear
+    seat only has one control.  If all of the seats are independently controlled,
+    the each station in the front will be set to "none", but the rear row will
+    be set to "rear" or "row", since all stations in the rear will be the same.
+    If the front row enables sync, all of the stations will read as "all".
+
+- Locked:
+  datatype: Boolean
+  type: sensor
+  description: >
+    This indicates whether or not the station can modify climate settings.
+    This is typically used for rear seats which may be "locked" and controlled
+    from the front row solely.  A value of True indicates the climate settings
+    for the station are locked.
