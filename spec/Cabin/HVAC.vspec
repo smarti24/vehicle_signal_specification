@@ -81,12 +81,14 @@
 
 - FrontDefrosterMode:
   datatype: string
-  enum: ["auto_off", "auto_on", "manual_on", "manual_off"]
+  enum: ["auto_off", "auto_on", "manual_on", "manual_off", "auto_max", "manual_max"]
   type: sensor
   description: >
     Determines if front defroster is on or off ("*_on"/"*_off") and whether
     or not it was triggered on by Auto climate settings or manually triggered
-    on/off ("auto_*"/"manual_*").
+    on/off ("auto_*"/"manual_*").  There is also a "max" mode that will turn
+    AC and/or heat to max, and fan speed to max to defrost as quick as possible
+    ("*_max").
 
 - RearDefrosterMode:
   datatype: string
@@ -140,3 +142,4 @@
   type: sensor
   unit: celsius- Cabin
   description: Ambient air temperature outside of vehicle
+
